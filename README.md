@@ -27,6 +27,8 @@ Finally, we can download our apk. Head back into your terminal, making sure you 
 ![ADB Install Parrot](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1mw0nhasoo2sgev93zji.png) 
 
 Good job! When we head back to our emulated device we can see that our app is now installed onto our device.😄
+![APK Working](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lzcs0piva2xddv9wk0s1.png)
+![APK Working](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rmsgvhlnvutzxk09ojqk.png)
 
 ## Installing JDX-GUI
 Now that we have our ADB and APK installed, we can now use this APK in JDX-GUI to decompile the code. ADB allowed us to access the app. JDX-GUI will allow us to access the app's code. 
