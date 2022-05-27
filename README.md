@@ -1,9 +1,9 @@
-## Android: How to Install ADB, APK's, and JDX-Gui on Parrot OS
-Recently I have dived into the journey of learning how to hack, or more precisely pen-testing. Since I focused previously on Android Pentesting when  I explained how to install Genymotion and VirtualBox on Parrot OS, I thought, why don't I write another tutorial on how to install [ADB](https://developer.android.com/studio/command-line/adb) and [JDX-GUI](https://github.com/skylot/jadx) on Parrot OS as it is related and quite easy to do. This tutorial assumes you have Android Studio and Parrot OS installed. A good Android Studio installation tutorial can be found [here](https://tutorialforlinux.com/2021/04/05/step-by-step-android-studio-parrot-linux-installation/).
+## Android: How to Install ADB, APK's, and JADX-Gui on Parrot OS
+Recently I have dived into the journey of learning how to hack, or more precisely pen-testing. Since I focused previously on Android Pentesting when  I explained how to install Genymotion and VirtualBox on Parrot OS, I thought, why don't I write another tutorial on how to install [ADB](https://developer.android.com/studio/command-line/adb) and [JADX-GUI](https://github.com/skylot/jadx) (jadx-gui) on Parrot OS as it is related and quite easy to do. This tutorial assumes you have Android Studio and Parrot OS installed. A good Android Studio installation tutorial can be found [here](https://tutorialforlinux.com/2021/04/05/step-by-step-android-studio-parrot-linux-installation/).
 
 In case you wonder, the version I use of Parrot is the [Security Edition](https://www.parrotsec.org/download/), which comes with most tools installed.🤠
 
-First, let's go over ADB and JDX-GUI. Android Debug Bridge (ADB) is a command-line tool that lets us communicate with a device, but more importantly for this tutorial, install APKs onto our emulated device. JDX-GUI is at its core a code decompiler, so we can take our APK that we downloaded and pop it into the decompiler and voila, we can see all the source code that it contains!
+First, let's go over ADB and JADX-GUI. Android Debug Bridge (ADB) is a command-line tool that lets us communicate with a device, but more importantly for this tutorial, install APKs onto our emulated device. JADX-GUI is at its core a code decompiler, so we can take our APK that we downloaded and pop it into the decompiler and voila, we can see all the source code that it contains!
 
 ## Installing ADB & APK's
 Once you have started up your Parrot OS system, open up a terminal using CTRL + ALT + T and run the following command: **sudo apt-get update**.
@@ -32,10 +32,10 @@ Good job! When we head back to our emulated device we can see that our app is no
 ![APK Working](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lzcs0piva2xddv9wk0s1.png)
 ![APK Working](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rmsgvhlnvutzxk09ojqk.png)
 
-## Installing JDX-GUI
-Now that we have our ADB and APK installed, we can now use this APK in JDX-GUI to decompile the code. ADB allowed us to access the app. JDX-GUI will allow us to access the app's code. 
+## Installing JADX-GUI
+Now that we have our ADB and APK installed, we can now use this APK in JADX-GUI to decompile the code. ADB allowed us to access the app. JADX-GUI will allow us to access the app's code. 
 
-<u>**To install JDX-GUI, we can simply do the following in the terminal:**</u>
+<u>**To install JADX-GUI, we can simply do the following in the terminal:**</u>
 1. sudo apt-get install jadx
 2. git clone https://github.com/skylot/jadx.git
 3. cd jadx
