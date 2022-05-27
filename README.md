@@ -6,8 +6,10 @@ In case you wonder, the version I use of Parrot is the [Security Edition](https:
 First, let's go over ADB and JDX-GUI. Android Debug Bridge (ADB) is a command-line tool that lets us communicate with a device, but more importantly for this tutorial, install APKs onto our emulated device. JDX-GUI is at its core a code decompiler, so we can take our APK that we downloaded and pop it into the decompiler and voila, we can see all the source code that it contains!
 
 ## Installing ADB & APK's
-Once you have started up your Parrot OS system, open up a terminal using CTRL + ALT + T and run the following command: **sudo apt-get install android-tools-adb**.
-
+Once you have started up your Parrot OS system, open up a terminal using CTRL + ALT + T and run the following command: **sudo apt-get update**.
+![adb](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xiprt2oi6vc5mu3fuh91.png)
+  
+Then we can install adb with the following command **sudo apt-get install android-tools-adb**.
 ![ADB Install Parrot](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dws4aamj5melaoft8u52.png)
  
 Once it has been installed, we can check if it "worked" by opening Genymotion and running our installed device. Check my [previous tutorial](https://dev.to/christinecdev/how-to-install-genymotion-virtualbox-on-parrot-os-287p) on how to do this. Once your emulated device is up and running, we can go back to our terminal and type in **adb devices**. We can see that we get a list of devices that are attached, one of which is our emulated device. 
